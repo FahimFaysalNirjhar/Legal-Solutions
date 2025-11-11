@@ -595,7 +595,7 @@
         </div>
       </section>
       <!-- contact section -->
-      <section>
+      <section class="max-w-5xl lg:mx-auto m-2 mb-20">
         <!-- description -->
         <div
           class="flex flex-col gap-6 justify-center items-center max-w-2xl mx-auto mb-16"
@@ -614,11 +614,13 @@
           </p>
         </div>
         <!-- container -->
-        <div>
+        <div class="flex flex-col lg:flex-row gap-8">
           <!-- grid -->
-          <div>
+          <div class="grid grid-cols-1 md:grid-cols-2">
             <!-- card 1 -->
-            <div class="card bg-[#F3F3F3]">
+            <div
+              class="card bg-[#F3F3F3] rounded-none md:border-r-2 border-b-2 border-[#CFCFCF]"
+            >
               <figure class="px-10 pt-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -656,7 +658,9 @@
               </div>
             </div>
             <!-- card 2 -->
-            <div class="card bg-[#F3F3F3]">
+            <div
+              class="card bg-[#F3F3F3] border-b-2 border-[#CFCFCF] rounded-none"
+            >
               <figure class="px-10 pt-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -687,7 +691,9 @@
               </div>
             </div>
             <!-- card 3 -->
-            <div class="card bg-[#F3F3F3]">
+            <div
+              class="card bg-[#F3F3F3] rounded-none border-b-2 md:border-b-0 md:border-r-2 border-[#CFCFCF]"
+            >
               <figure class="px-10 pt-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -718,7 +724,7 @@
               </div>
             </div>
             <!-- card 4 -->
-            <div class="card bg-[#F3F3F3]">
+            <div class="card bg-[#F3F3F3] rounded-none">
               <figure class="px-10 pt-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -750,6 +756,35 @@
             </div>
           </div>
           <!-- form -->
+          <div class="flex-1">
+            <form class="space-y-4">
+              <input
+                type="text"
+                class="w-full h-12 bg-[#F3F3F3] border-0 rounded-lg font-poppins px-4 focus:outline-none mb-8 text-sm"
+                placeholder="Your Name"
+              />
+              <input
+                type="email"
+                class="w-full h-12 bg-[#F3F3F3] border-0 rounded-lg font-poppins px-4 focus:outline-none mb-8 text-sm"
+                placeholder="Your Email"
+              />
+              <input
+                type="text"
+                class="w-full h-12 bg-[#F3F3F3] border-0 rounded-lg font-poppins px-4 focus:outline-none mb-8 text-sm"
+                placeholder="Subject"
+              />
+              <textarea
+                class="w-full h-32 bg-[#F3F3F3] border-0 rounded-lg font-poppins px-4 py-3 resize-none focus:outline-none mb-8 text-sm"
+                placeholder="Your Message"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full h-12 bg-[#B68C5A] text-white font-poppins rounded-lg shadow-none border-none hover:bg-[#a97b4f] transition-colors font-semibold"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
